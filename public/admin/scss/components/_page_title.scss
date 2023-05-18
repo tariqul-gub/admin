@@ -1,0 +1,20 @@
+.page-title {
+    .title {
+        font-size: 1.35rem;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .breadcrumb {
+        .breadcrumb-item {
+            color: $gray2;
+            a {
+                color: $gray2;
+                text-decoration: none;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

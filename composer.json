@@ -1,0 +1,16 @@
+{
+    "name": "tariqul-gub/admin",
+    "description": "Custom Admin Template",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "TariqulGub\\Admin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Md. Tariqul Islam"
+        }
+    ],
+    "require": {}
+}

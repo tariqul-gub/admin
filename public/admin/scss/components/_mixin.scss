@@ -1,0 +1,7 @@
+@mixin headerText {
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: $gray;
+    font-family: secondaryFont();
+}

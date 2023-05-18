@@ -1,0 +1,25 @@
+#banner {
+    margin-top: -60px;
+    position: relative;
+    z-index: 0;
+    .content {
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .overlay {
+                        height: 100%;
+                        width: 100%;
+                        background-color: rgba(#2b004e, 0.15);
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    #banner {
+        margin-top: -47px;
+    }
+}

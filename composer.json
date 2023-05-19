@@ -13,5 +13,12 @@
             "name": "Md. Tariqul Islam"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TariqulGub\\Admin\\AdminServiceProvider"
+            ]
+        }
+    }
 }

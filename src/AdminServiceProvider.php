@@ -15,8 +15,11 @@ class AdminServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/admin'),
             __DIR__ . '/../public' => public_path(''),
-            //     __DIR__ . '/../config/admin.php' => config_path('admin.php'),
-        ], 'tariqul-gub-admin');
+        ], 'tariqul-gub-admin-views');
+
+        $this->publishes([
+            __DIR__ . '/../config/admin.php' => config_path('admin.php'),
+        ], 'tariqul-gub-admin-config');
     }
     public function register(): void
     {

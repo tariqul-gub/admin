@@ -8,23 +8,17 @@
 </li>
 
 <li class="nav-item">
-    <a href="#" class="nav-link">
+    <a href="{{ route('project.index') }}" class="nav-link">
         <span class="material-symbols-outlined">
             group
         </span>
-        Menu 1
-    </a>
-</li>
-<li class="nav-item">
-    <a href="#" class="nav-link">
-        <span class="material-symbols-outlined">
-            group
-        </span>
-        Menu 2
+        Project
     </a>
 </li>
 
-<li class="nav-item accordion-item">
+</li>
+
+<li class="nav-item accordion-item d-none">
     <a href="#" class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#collapseOne">
         <span class="material-symbols-outlined">

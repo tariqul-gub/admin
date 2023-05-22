@@ -18,15 +18,16 @@
             <div class="backdrop overlay"></div>
             @include('admin::tm1.inc.topnav')
             <div id="main-content">
-                <div class="page-title">
+                @yield('title')
+                {{-- <div class="page-title">
                     <h1 class="title"> @yield('template_title')</h1>
                     <nav aria-label="breadcrumb">
                         @yield('title')
-                        {{-- <ol class="breadcrumb">
+                        <ol class="breadcrumb">
                             <li class="breadcrumb-item">Dashboard</li>
-                        </ol> --}}
+                        </ol>
                     </nav>
-                </div>
+                </div> --}}
                 <div class="page-content" style="background-color: rgba(0,0,0,0); ">
                     @yield('content')
                 </div>

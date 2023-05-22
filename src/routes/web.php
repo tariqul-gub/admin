@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use TariqulGub\Admin\Controllers\HomeController;
 
-Route::get('admin1', function () {
-    return view('admin::tm1.master');
-});
+
+Route::get('home', [HomeController::class, 'home'])->name('admin.home');

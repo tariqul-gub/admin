@@ -13,13 +13,13 @@
                     <div class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="d-inline-flex align-items-center">
                             <img class="photo d-none" src="../img/biography/life.png" alt="">
-                            @auth
-                                <div class="avatar">{{ substr(auth()->user()->name, 0, 1) }}</div>
-                                <div class="name">{{ auth()->user()->name }}</div>
-                                <span class="material-symbols-outlined">
-                                    expand_more
-                                </span>
-                            @endauth
+                            {{-- <div class="avatar">{{ substr(auth()->user()->name, 0, 1) }}</div> --}}
+                            <div class="avatar">A</div>
+                            {{-- <div class="name">{{ auth()->user()->name }}</div> --}}
+                            <div class="name">Md. Tariqul Islam</div>
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
                         </div>
 
                     </div>

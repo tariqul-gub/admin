@@ -13,7 +13,6 @@
             "name": "Md. Tariqul Islam"
         }
     ],
-    "require": {},
     "extra": {
         "laravel": {
             "providers": [

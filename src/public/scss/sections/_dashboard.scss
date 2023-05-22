@@ -1,0 +1,27 @@
+.dashboard {
+    .card-grid {
+        .card {
+            min-height: 120px;
+            display: flex;
+            .card-body {
+                display: flex;
+                align-items: center;
+                line-height: 1;
+                padding: 20px;
+                .material-symbols-outlined {
+                    font-size: 50px;
+                    margin-right: 20px;
+                    color: $primary;
+                }
+                .digit {
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+            }
+            hr {
+                margin-bottom: 7px;
+                margin-top: 7px;
+            }
+        }
+    }
+}

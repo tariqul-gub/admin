@@ -21,13 +21,13 @@
                 <div class="page-title">
                     <h1 class="title"> @yield('template_title')</h1>
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Users</li>
-                        </ol>
+                        @yield('title')
+                        {{-- <ol class="breadcrumb">
+                            <li class="breadcrumb-item">Dashboard</li>
+                        </ol> --}}
                     </nav>
                 </div>
-                <div class="page-content">
+                <div class="page-content" style="background-color: rgba(0,0,0,0); ">
                     @yield('content')
                 </div>
             </div>

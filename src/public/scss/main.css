@@ -14,7 +14,6 @@ body {
 }
 #admin #sidebar {
   transition: 0.5s;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -24,7 +23,6 @@ body {
   height: 100vh;
 }
 #admin #sidebar .top {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -105,7 +103,6 @@ body {
   position: relative;
 }
 #admin #right .topnav {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -120,7 +117,6 @@ body {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   color: #9d9da6;
 }
@@ -131,7 +127,6 @@ body {
   color: #4f4f4f;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   display: inline-flex;
   align-items: center;
@@ -484,10 +479,6 @@ label.optional::after {
   color: #949697;
   font-weight: 300;
 }
-.form-control:-ms-input-placeholder, .form-select:-ms-input-placeholder, .ts-control:-ms-input-placeholder {
-  color: #949697;
-  font-weight: 300;
-}
 .form-control::placeholder,
 .form-select::placeholder,
 .ts-control::placeholder {
@@ -562,8 +553,7 @@ label.optional::after {
   height: 66px;
   width: 66px;
   transform: scale(1.5);
-  -webkit-animation-iteration-count: 0;
-          animation-iteration-count: 0;
+  animation-iteration-count: 0;
 }
 #home-videos .videos .video:hover .content .video-title {
   color: #1e1e2d;
@@ -603,12 +593,9 @@ label.optional::after {
   transition: 0.1s;
   height: 50px;
   width: 50px;
-  -webkit-animation-name: small-video-icon;
-          animation-name: small-video-icon;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: small-video-icon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 #home-videos .videos .video .content .image .video-link .outer .inner {
   display: flex;
@@ -623,22 +610,6 @@ label.optional::after {
 #home-videos .videos .video .content .image .video-link .outer .inner .play-btn {
   height: 23px;
   margin-left: 12px;
-}
-@-webkit-keyframes small-video-icon {
-  0% {
-    height: 50;
-    background-color: #0095e8;
-    width: 50;
-  }
-  50% {
-    height: 66px;
-    width: 66px;
-  }
-  100% {
-    height: 50;
-    background-color: rgba(0, 149, 232, 0);
-    width: 50;
-  }
 }
 @keyframes small-video-icon {
   0% {
@@ -663,4 +634,28 @@ label.optional::after {
   color: #9d9da6;
   padding: 17px;
   min-height: 70px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.dashboard .card-grid .card {
+  min-height: 120px;
+  display: flex;
+}
+.dashboard .card-grid .card .card-body {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  padding: 20px;
+}
+.dashboard .card-grid .card .card-body .material-symbols-outlined {
+  font-size: 50px;
+  margin-right: 20px;
+  color: #0095e8;
+}
+.dashboard .card-grid .card .card-body .digit {
+  font-weight: 700;
+  font-size: 20px;
+}
+.dashboard .card-grid .card hr {
+  margin-bottom: 7px;
+  margin-top: 7px;
+}

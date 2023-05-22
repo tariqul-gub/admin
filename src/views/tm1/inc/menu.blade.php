@@ -1,7 +1,7 @@
 <li class="nav-item">
-    <a href="#" class="nav-link">
+    <a href="{{ route('admin.home') }}" class="nav-link @if (Route::is('admin.home')) active @endif">
         <span class="material-symbols-outlined">
-            dashboard
+            team_dashboard
         </span>
         Dashboard
     </a>

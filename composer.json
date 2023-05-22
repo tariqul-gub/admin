@@ -13,12 +13,7 @@
             "name": "Md. Tariqul Islam"
         }
     ],
-    "require": {
-        "livewire/livewire": "^2.12",
-        "spatie/laravel-activitylog": "^4.7",
-        "spatie/laravel-permission": "^5.10",
-        "laravel/ui": "^3.4"
-    },
+    "require": {},
     "extra": {
         "laravel": {
             "providers": [
